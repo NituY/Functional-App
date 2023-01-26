@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="#FAFAFA"
+    android:backgroundTint="#009688"
     android:textAlignment="center"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="246dp"
-        android:layout_height="64dp"
+        android:layout_width="338dp"
+        android:layout_height="88dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="21dp"
+        android:layout_marginStart="38dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="186dp"
+        android:layout_marginTop="119dp"
         android:text="Get IMEI"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent" />
@@ -28,114 +31,149 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="33dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="262dp"
-        android:layout_marginEnd="47dp"
-        android:text="TextView"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="31dp"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/timeTv"
-        android:layout_width="312dp"
-        android:layout_height="64dp"
+        android:layout_width="348dp"
+        android:layout_height="68dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="18dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="429dp"
-        android:text="TimeStamp"
+        android:layout_marginTop="476dp"
+        android:text="Get Current Date and Time"
         android:textAlignment="center"
+        android:textColor="#0C0C0C"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/TimeBtn"
-        android:layout_width="258dp"
-        android:layout_height="68dp"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="17dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="38dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="332dp"
-        android:layout_marginEnd="136dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="34dp"
         android:text="Get TimeStamp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="154dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="265dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="154dp"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="263dp"
+        android:layout_marginEnd="224dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_calendar_month_24" />
 
     <Button
         android:id="@+id/locationBtn"
-        android:layout_width="246dp"
-        android:layout_height="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="515dp"
-        android:layout_marginEnd="107dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="566dp"
+        android:layout_marginEnd="58dp"
         android:text="Get Location"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/loctv"
         android:layout_width="360dp"
         android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="264dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="193dp"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
 
         android:id="@+id/layout1"
-        android:visibility="gone"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="gone">
 
-    <ImageView
-        android:id="@+id/imageWIFI"
-        android:layout_width="94dp"
-        android:layout_height="65dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="832dp"
-        android:src="@drawable/ic_baseline_wifi_24"
-        app:tint = "@android:color/holo_green_dark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/imageWifi"
+            android:layout_width="94dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_baseline_wifi_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018"
+            app:tint="@color/black" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="133dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="Connected"
-        android:textColor="#648C35"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Connected"
+            android:textColor="#131313"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.395"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.028" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="-4dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:visibility="gone">
 
         <ImageView
@@ -144,7 +182,7 @@
             android:layout_height="65dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:src="@drawable/ic_baseline_wifi_24"
+            android:src="@drawable/ic_baseline_wifi_off_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.949"
@@ -159,19 +197,18 @@
             android:layout_height="45dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="108dp"
             android:text="Not Connected"
             android:textColor="#EC372A"
             android:textSize="20dp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintHorizontal_bias="0.934"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.092" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 
 </RelativeLayout>
